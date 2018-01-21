@@ -44,7 +44,7 @@
 
   var $title = $('#title')
 
-  var database = firebase.datebase().ref().child('titulo')
+  var database = firebase.database().ref().child('titulo')
 
   database.on('value', function(snapshot) {
     $title.text(snapshot.val());
